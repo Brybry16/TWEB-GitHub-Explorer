@@ -1,4 +1,4 @@
-# HEIGVD-AMT-2016-Bootcamp-01
+# HEIGVD-TWEB-2016-GitHub-Explorer
 
 ## Introduction
 
