@@ -2,7 +2,8 @@
 
 ## Introduction
 
-This repo contains our first laboratory for the TWEB course at HEIG-VD, Switzerland
+This repo contains our first laboratory for the TWEB course at HEIG-VD, Switzerland.
+Group **I** is composed by [@ToniDias](http://github.com/ToniDias/) and myself [@Brybry16](http://github.com/Brybry16/)
 
 ## Quick start
 
