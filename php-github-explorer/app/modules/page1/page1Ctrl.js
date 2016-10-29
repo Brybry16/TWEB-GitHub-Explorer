@@ -1,4 +1,4 @@
-(function() {
+(function () {
 	'use strict';
 
 	/**
@@ -9,24 +9,53 @@
 	* Controller of the app
 	*/
 
-  	angular
+	angular
 		.module('page1')
 		.controller('Page1Ctrl', Page1);
 
-		Page1.$inject = [];
+	Page1.$inject = [];
 
-		/*
-		* recommend
-		* Using function declarations
-		* and bindable members up top.
-		*/
+	/*
+	* recommend
+	* Using function declarations
+	* and bindable members up top.
+	*/
 
-		function Page1() {
-			/*jshint validthis: true */
-			var vm = this;
+	function Page1() {
+		/*jshint validthis: true */
+		var vm = this;
 
-			vm.title = "Welcome to GitHub Explorer!";
+		vm.title = "Welcome to GitHub Explorer!";
 
-		}
+
+		// Variables pour les entrée utilisateur
+		vm.username = undefined;
+		vm.repo = undefined;
+
+		vm.repos = [];
+
+		//var request = require("supertest-as-promised");
+		var github = "https://api.github.com";
+
+		
+
+
+	}
+
+
+
+	function apiCall(path) {
+		return request(github)
+			.get(path)
+			.auth("ToniDias", "43bb771f9610114317e279f2481e064b59ff71d2");
+	}
+
+	apiCall("/users/Tonidias/repos")
+    .then(function(res) {
+        var events = res.body;
+        console.log("Got /Toni events");
+        console.log(events);
+        return events;
+    });
 
 })();

@@ -1,7 +1,19 @@
-<div class="md-padding" flex layout-sm="column">
-    <md-card>
-        <md-card-content>
-            <h2 class="md-title">{{ vm.title }}</h2>
-        </md-card-content>
-    </md-card>
+<div>
+	<div class="md-padding" flex layout-sm="column">
+		<md-card>
+			<md-card-content>
+				<h2 class="md-title">{{ vm.title }}</h2>
+			</md-card-content>
+		</md-card>
+	</div>
 </div>
+
+<form name="myForm">
+	<p><input ng-model="vm.username" type="text" name="username" value="" placeholder="Username"></p>
+	<p><input ng-model="vm.repo" type="text" name="password" value="" placeholder="Repo"></p>
+	<p class="submit"><input type="submit" name="commit" value="Login"></p>
+</form>
+
+<!--TODO DELETE -->
+<h2 class="md-title">Username: {{vm.username}}</h2>
+<h2 class="md-title">Repo: {{vm.repo}}</h2>
