@@ -13,7 +13,7 @@
 		.module('page1')
 		.controller('Page1Ctrl', Page1);
 
-	Page1.$inject = [];
+	Page1.$inject = ['$http'];
 
 	/*
 	* recommend
