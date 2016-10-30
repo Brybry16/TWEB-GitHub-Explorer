@@ -19,3 +19,19 @@ You can deploy our app in your heroku account. For that, you only need to deploy
 ```
 php-github-explorer
 ```
+
+The application as accessible at the following URL:
+
+```
+https://php-github-explorer.herokuapp.com/index.html
+```
+
+##Principal technologies used in this project
+
+- [Angm-generator](http://github.com/newaeonweb/generator-angm)
+- [Node JS](http://nodejs.org/en/)
+- [MongoDB](http://docs.mongodb.com/)
+- [GitHub API](http://developer.github.com/v3/)
+- [GitHub Jekyll](http://jekyllrb.com/)
+- [Chart JS](http://www.chartjs.org/)
+- [Heroku](http://www.heroku.com)
