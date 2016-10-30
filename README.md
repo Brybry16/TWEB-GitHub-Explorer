@@ -12,3 +12,10 @@ You can access the landing page of our project at the following URL:
 ```
 brybry16.github.io/TWEB-GitHub-Explorer/index.html
 ```
+
+##Repo for heroku
+You can deploy our app in your heroku account. For that, you only need to deploy this folder to your heroku account:
+
+```
+php-github-explorer
+```
